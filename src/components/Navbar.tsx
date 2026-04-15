@@ -19,7 +19,7 @@ const Navbar = () => {
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <a href="#" className="flex items-center gap-2">
           <Siren className="w-6 h-6 text-primary" />
-          <span className="font-heading font-bold text-lg text-foreground">Intentovex</span>
+          <span className="font-heading font-bold text-xl text-gradient-emergency">INTENTOVEX</span>
         </a>
 
         <div className="hidden md:flex items-center gap-8">

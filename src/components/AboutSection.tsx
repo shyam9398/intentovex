@@ -2,20 +2,20 @@ import SectionWrapper from "./SectionWrapper";
 import { Brain, Radio, Waypoints } from "lucide-react";
 
 const cards = [
-  { icon: Brain, title: "AI-Driven Intelligence", desc: "Advanced algorithms analyze traffic and optimize routes in real time." },
-  { icon: Radio, title: "Connected Systems", desc: "Seamlessly links ambulances, traffic signals, and control rooms." },
-  { icon: Waypoints, title: "Green Corridors", desc: "Automated signal control ensures unobstructed emergency pathways." },
+  { icon: Brain, title: "AI Junction Intelligence", desc: "Analyzes traffic density at junctions in real time and decides optimal signal timing." },
+  { icon: Radio, title: "Connected Junctions", desc: "Links ambulances to upcoming traffic junctions and control rooms seamlessly." },
+  { icon: Waypoints, title: "Green Corridor at Junctions", desc: "Automatically switches signals green at every junction along the ambulance route." },
 ];
 
 const AboutSection = () => (
   <SectionWrapper id="about">
     <div className="text-center mb-16">
-      <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">About Intentovex</p>
-      <h2 className="text-3xl md:text-5xl font-bold mb-6">
-        Revolutionizing Emergency Response<br className="hidden md:block" /> with Intelligent Systems
+      <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">About</p>
+      <h2 className="text-3xl md:text-5xl font-bold mb-2">
+        What is <span className="text-gradient-emergency">Intentovex</span>?
       </h2>
-      <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-        Intentovex is an advanced AI-driven platform designed to help ambulances reach hospitals faster by reducing traffic delays. It connects ambulances, traffic systems, and control rooms to ensure smooth and efficient emergency movement.
+      <p className="text-muted-foreground text-lg max-w-3xl mx-auto mt-6">
+        <span className="text-foreground font-semibold">Intentovex</span> is an AI-driven system designed specifically for <span className="text-foreground font-semibold">traffic junctions</span>. It detects approaching ambulances and automatically controls traffic signals at each junction to create a clear, uninterrupted green corridor — helping emergency vehicles reach hospitals faster.
       </p>
     </div>
     <div className="grid md:grid-cols-3 gap-6">
