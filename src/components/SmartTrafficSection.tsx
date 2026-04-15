@@ -1,12 +1,12 @@
 import SectionWrapper from "./SectionWrapper";
 import { Button } from "./ui/button";
-import { Zap, BarChart3, Timer, Users } from "lucide-react";
+import { Zap, BarChart3, Timer, Radar } from "lucide-react";
 
 const benefits = [
-  { icon: Zap, text: "Dynamic junction signal management" },
-  { icon: BarChart3, text: "Reduced congestion at junctions" },
-  { icon: Timer, text: "Zero stop-time at traffic lights" },
-  { icon: Users, text: "Coordinated response with junction authorities" },
+  { icon: Radar, text: "Geofence triggers instant alerts" },
+  { icon: Zap, text: "Display boards show direction in real time" },
+  { icon: Timer, text: "Vehicles clear the path before arrival" },
+  { icon: BarChart3, text: "Scales from rural to metropolitan" },
 ];
 
 const SmartTrafficSection = () => (
@@ -14,12 +14,12 @@ const SmartTrafficSection = () => (
     <div className="relative rounded-2xl overflow-hidden glow-green">
       <div className="absolute inset-0 bg-gradient-to-r from-accent/10 to-primary/10" />
       <div className="relative p-8 md:p-16 text-center">
-        <p className="text-accent font-medium text-sm uppercase tracking-widest mb-3">Smart Junction Control</p>
+        <p className="text-accent font-medium text-sm uppercase tracking-widest mb-3">Smart Alert System</p>
         <h2 className="text-3xl md:text-5xl font-bold mb-2">
           <span className="text-gradient-emergency">Intentovex</span> Green Corridor
         </h2>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-10 mt-4">
-          <span className="text-foreground font-semibold">Intentovex</span> clears every traffic junction before the ambulance arrives — signals go green automatically, creating a seamless corridor from origin to hospital.
+          The moment an ambulance crosses a geofence boundary, display boards light up with direction and distance — giving traffic the early warning it needs to clear the path.
         </p>
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 mb-10">
           {benefits.map((b, i) => (

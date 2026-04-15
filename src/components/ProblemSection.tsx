@@ -2,10 +2,10 @@ import SectionWrapper from "./SectionWrapper";
 import { AlertTriangle, TrafficCone, BellOff, HeartCrack } from "lucide-react";
 
 const problems = [
-  { icon: TrafficCone, text: "Ambulances stuck at congested traffic junctions" },
-  { icon: AlertTriangle, text: "No coordination between ambulances and junction signals" },
-  { icon: BellOff, text: "No real-time alerts to vehicles near junctions" },
-  { icon: HeartCrack, text: "Delays at junctions leading to preventable loss of lives" },
+  { icon: TrafficCone, text: "Ambulances stuck — no advance warning to vehicles ahead" },
+  { icon: AlertTriangle, text: "No system to alert traffic at rural road stretches" },
+  { icon: BellOff, text: "Junctions in semi-urban & metro areas lack smart coordination" },
+  { icon: HeartCrack, text: "Delayed response when every second counts for the patient" },
 ];
 
 const ProblemSection = () => (
@@ -13,7 +13,7 @@ const ProblemSection = () => (
     <div className="text-center mb-16">
       <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">The Problem</p>
       <h2 className="text-3xl md:text-5xl font-bold">
-        Why Traffic Junctions Are the<br className="hidden md:block" /> Biggest Bottleneck
+        Why Ambulances Still<br className="hidden md:block" /> Get Delayed
       </h2>
     </div>
     <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">

@@ -1,21 +1,21 @@
 import SectionWrapper from "./SectionWrapper";
-import { Navigation, Satellite, Brain, Radar, Bell, TrafficCone, Hospital } from "lucide-react";
+import { Navigation, Satellite, Brain, Radar, Monitor, Bell, Hospital } from "lucide-react";
 
 const steps = [
   { icon: Navigation, label: "Ambulance driver selects destination" },
-  { icon: Satellite, label: "GPS tracks ambulance in real time" },
-  { icon: Brain, label: "AI calculates optimal route through junctions" },
-  { icon: Radar, label: "Geofencing detects the next traffic junction" },
-  { icon: Bell, label: "Alerts sent to vehicles and junction authorities" },
-  { icon: TrafficCone, label: "Junction signals turn green automatically" },
-  { icon: Hospital, label: "Ambulance reaches hospital without stopping" },
+  { icon: Satellite, label: "GPS tracks ambulance location in real time" },
+  { icon: Brain, label: "AI determines optimal route and upcoming geofences" },
+  { icon: Radar, label: "Ambulance enters the geofence zone" },
+  { icon: Monitor, label: "Display boards show ambulance direction & distance" },
+  { icon: Bell, label: "Vehicles and pedestrians get early visual warning" },
+  { icon: Hospital, label: "Ambulance passes through with cleared path" },
 ];
 
 const HowItWorksSection = () => (
   <SectionWrapper className="bg-secondary/50">
     <div className="text-center mb-16">
       <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">How <span className="text-gradient-emergency font-bold">Intentovex</span> Works</p>
-      <h2 className="text-3xl md:text-5xl font-bold">Junction-by-Junction, Life-Saving Automation</h2>
+      <h2 className="text-3xl md:text-5xl font-bold">Geofence Triggered, Display Board Delivered</h2>
     </div>
     <div className="relative max-w-4xl mx-auto">
       <div className="absolute left-6 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary via-accent to-primary/20 md:-translate-x-px" />

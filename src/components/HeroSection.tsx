@@ -20,19 +20,19 @@ const HeroSection = () => (
       >
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-8">
           <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-          AI-Powered Traffic Junction Control
+          Geofence + Display Board Alert System
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight max-w-5xl mx-auto mb-6">
           <span className="text-gradient-emergency text-5xl sm:text-6xl md:text-8xl tracking-tight">INTENTOVEX</span>
           <br />
-          <span className="text-foreground text-3xl sm:text-4xl md:text-5xl">Smart Ambulance Clearance at</span>
+          <span className="text-foreground text-3xl sm:text-4xl md:text-5xl">Early Warning. Every Road.</span>
           <br />
-          <span className="text-foreground text-3xl sm:text-4xl md:text-5xl">Every Traffic Junction</span>
+          <span className="text-foreground text-3xl sm:text-4xl md:text-5xl">Every Junction.</span>
         </h1>
 
-        <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-          AI-powered, real-time traffic signal control at junctions — clearing the way for ambulances when every second counts.
+        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10">
+          From rural roads to metropolitan junctions — <span className="text-foreground font-semibold">Intentovex</span> uses geofences and smart display boards to alert traffic <em>before</em> the ambulance arrives.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

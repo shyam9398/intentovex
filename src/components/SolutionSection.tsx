@@ -1,12 +1,12 @@
 import SectionWrapper from "./SectionWrapper";
-import { MapPin, Bell, Shield, TrafficCone, Route } from "lucide-react";
+import { MapPin, Bell, Monitor, Radar, Route } from "lucide-react";
 
 const features = [
-  { icon: MapPin, text: "Tracks ambulance approaching each junction" },
-  { icon: Bell, text: "Sends alerts to vehicles near the junction" },
-  { icon: Shield, text: "Notifies traffic police at the junction" },
-  { icon: TrafficCone, text: "Automatically turns junction signals green" },
-  { icon: Route, text: "Creates a Green Corridor across multiple junctions" },
+  { icon: Radar, text: "Geofence placed around junction or road stretch" },
+  { icon: Monitor, text: "Display boards positioned for early visual alerts" },
+  { icon: MapPin, text: "Ambulance entry into geofence triggers instant alerts" },
+  { icon: Bell, text: "Boards show ambulance direction before it arrives" },
+  { icon: Route, text: "Scales from rural boards to metro-wide coverage" },
 ];
 
 const SolutionSection = () => (
@@ -15,10 +15,10 @@ const SolutionSection = () => (
       <div>
         <p className="text-accent font-medium text-sm uppercase tracking-widest mb-3">Our Solution</p>
         <h2 className="text-3xl md:text-5xl font-bold mb-6">
-          <span className="text-gradient-emergency">Intentovex</span> Controls Junctions Automatically
+          <span className="text-gradient-emergency">Intentovex</span> — Geofence + Display Board
         </h2>
         <p className="text-muted-foreground text-lg mb-8">
-          <span className="text-foreground font-semibold">Intentovex</span> operates at every traffic junction along the ambulance route, clearing signals in advance so the vehicle never has to stop.
+          When an ambulance enters a geofence, smart display boards positioned along the route immediately show the direction it's coming from — clearing the way before it reaches the congested area.
         </p>
         <div className="space-y-4">
           {features.map((f, i) => (
@@ -39,7 +39,7 @@ const SolutionSection = () => (
             <div className="absolute inset-8 rounded-full border-2 border-accent/40 animate-ping" style={{ animationDuration: "2s" }} />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-20 h-20 rounded-full bg-accent/20 flex items-center justify-center glow-green">
-                <Route className="w-10 h-10 text-accent" />
+                <Monitor className="w-10 h-10 text-accent" />
               </div>
             </div>
           </div>
