@@ -2,17 +2,17 @@ import SectionWrapper from "./SectionWrapper";
 import { Smartphone, Zap, Building, Scale } from "lucide-react";
 
 const points = [
-  { icon: Smartphone, title: "Easy Interface", desc: "Intuitive design for ambulance drivers under pressure." },
-  { icon: Zap, title: "Minimal Interaction", desc: "Works with just a few taps — speed is priority." },
-  { icon: Building, title: "Urban & Semi-Urban", desc: "Designed for diverse city and town environments." },
-  { icon: Scale, title: "Scalable System", desc: "No heavy infrastructure required for deployment." },
+  { icon: Smartphone, title: "Simple Driver Interface", desc: "Just select destination — the system handles everything else." },
+  { icon: Zap, title: "Instant Visual Alerts", desc: "Display boards require no driver interaction — fully automated." },
+  { icon: Building, title: "Rural to Metro Ready", desc: "Works in villages, towns, and dense metropolitan areas." },
+  { icon: Scale, title: "Low Infrastructure Cost", desc: "Only geofences (software) + LED display boards needed." },
 ];
 
 const RealWorldSection = () => (
   <SectionWrapper className="bg-secondary/50">
     <div className="text-center mb-16">
       <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">Real-World Design</p>
-      <h2 className="text-3xl md:text-5xl font-bold">Simple, Fast, and Reliable for Emergency Teams</h2>
+      <h2 className="text-3xl md:text-5xl font-bold">Built for Practical Deployment</h2>
     </div>
     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {points.map((p, i) => (

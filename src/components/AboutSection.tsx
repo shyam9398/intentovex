@@ -1,10 +1,10 @@
 import SectionWrapper from "./SectionWrapper";
-import { Brain, Radio, Waypoints } from "lucide-react";
+import { Brain, Monitor, Radar } from "lucide-react";
 
 const cards = [
-  { icon: Brain, title: "AI Junction Intelligence", desc: "Analyzes traffic density at junctions in real time and decides optimal signal timing." },
-  { icon: Radio, title: "Connected Junctions", desc: "Links ambulances to upcoming traffic junctions and control rooms seamlessly." },
-  { icon: Waypoints, title: "Green Corridor at Junctions", desc: "Automatically switches signals green at every junction along the ambulance route." },
+  { icon: Radar, title: "Geofence Detection", desc: "Virtual boundaries placed on the map detect approaching ambulances automatically." },
+  { icon: Monitor, title: "Smart Display Boards", desc: "LED boards alert nearby traffic about incoming ambulances with direction info." },
+  { icon: Brain, title: "AI-Powered Adaptation", desc: "System scales from rural roads to metro junctions with intelligent geofence sizing." },
 ];
 
 const AboutSection = () => (
@@ -15,7 +15,7 @@ const AboutSection = () => (
         What is <span className="text-gradient-emergency">Intentovex</span>?
       </h2>
       <p className="text-muted-foreground text-lg max-w-3xl mx-auto mt-6">
-        <span className="text-foreground font-semibold">Intentovex</span> is an AI-driven system designed specifically for <span className="text-foreground font-semibold">traffic junctions</span>. It detects approaching ambulances and automatically controls traffic signals at each junction to create a clear, uninterrupted green corridor — helping emergency vehicles reach hospitals faster.
+        <span className="text-foreground font-semibold">Intentovex</span> is an AI-driven early warning system that uses <span className="text-foreground font-semibold">geofences</span> and <span className="text-foreground font-semibold">smart display boards</span> to alert traffic about approaching ambulances — adapted for rural, semi-urban, and metropolitan areas.
       </p>
     </div>
     <div className="grid md:grid-cols-3 gap-6">
