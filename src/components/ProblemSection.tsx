@@ -2,10 +2,10 @@ import SectionWrapper from "./SectionWrapper";
 import { AlertTriangle, TrafficCone, BellOff, HeartCrack } from "lucide-react";
 
 const problems = [
-  { icon: TrafficCone, text: "Ambulances stuck in heavy traffic" },
-  { icon: AlertTriangle, text: "Lack of coordination with traffic signals" },
-  { icon: BellOff, text: "No real-time alerts to nearby vehicles" },
-  { icon: HeartCrack, text: "Delay in emergency response leading to loss of lives" },
+  { icon: TrafficCone, text: "Ambulances stuck at congested traffic junctions" },
+  { icon: AlertTriangle, text: "No coordination between ambulances and junction signals" },
+  { icon: BellOff, text: "No real-time alerts to vehicles near junctions" },
+  { icon: HeartCrack, text: "Delays at junctions leading to preventable loss of lives" },
 ];
 
 const ProblemSection = () => (
@@ -13,7 +13,7 @@ const ProblemSection = () => (
     <div className="text-center mb-16">
       <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">The Problem</p>
       <h2 className="text-3xl md:text-5xl font-bold">
-        Critical Challenges in<br className="hidden md:block" /> Emergency Transportation
+        Why Traffic Junctions Are the<br className="hidden md:block" /> Biggest Bottleneck
       </h2>
     </div>
     <div className="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
