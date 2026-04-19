@@ -3,7 +3,7 @@ import SectionWrapper from "./SectionWrapper";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { Send } from "lucide-react";
+import { Send, Mail } from "lucide-react";
 
 const ContactSection = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -18,6 +18,16 @@ const ContactSection = () => {
       <div className="text-center mb-16">
         <p className="text-primary font-medium text-sm uppercase tracking-widest mb-3">Contact Us</p>
         <h2 className="text-3xl md:text-5xl font-bold">Get in Touch</h2>
+        <p className="mt-4 text-muted-foreground">
+          Send us a message below — or reach the founder directly at{" "}
+          <a
+            href="mailto:founder.intentovex@gmail.com"
+            className="inline-flex items-center gap-1.5 font-semibold text-primary hover:underline"
+          >
+            <Mail className="w-4 h-4" />
+            founder.intentovex@gmail.com
+          </a>
+        </p>
       </div>
       <div className="max-w-lg mx-auto">
         {submitted ? (
