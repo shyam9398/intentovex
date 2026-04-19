@@ -1,4 +1,4 @@
-import { Siren } from "lucide-react";
+import { Siren, Mail } from "lucide-react";
 
 const Footer = () => (
   <footer className="border-t border-border/50 py-12">
@@ -18,6 +18,16 @@ const Footer = () => (
         <p className="text-sm text-muted-foreground text-right">
           © {new Date().getFullYear()} <span className="text-foreground font-semibold">Intentovex</span>. All rights reserved.
         </p>
+      </div>
+      <div className="mt-10 pt-8 border-t border-border/50 flex flex-col items-center gap-3 text-center">
+        <p className="text-sm uppercase tracking-widest text-primary font-medium">Reach the Founder</p>
+        <a
+          href="mailto:founder.intentovex@gmail.com"
+          className="inline-flex items-center gap-2 text-base md:text-lg font-semibold text-foreground hover:text-primary transition-colors"
+        >
+          <Mail className="w-5 h-5 text-primary" />
+          founder.intentovex@gmail.com
+        </a>
       </div>
     </div>
   </footer>
